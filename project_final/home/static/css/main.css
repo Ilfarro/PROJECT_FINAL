@@ -303,3 +303,29 @@ span.home_contact{
 	-webkit-transform: rotate(0) scale(1);
 	transform: rotate(15deg) scale(1);
 }
+
+/* TOMBOL PAGE */
+.tombol_page {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.tombol_page:hover {
+  background-color: rgb(39, 39, 39);
+  color: black;
+}
+
+.previous {
+  background-color: rgb(172, 172, 172);
+  color: black;
+}
+
+.next {
+  background-color: rgb(172, 172, 172);
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
