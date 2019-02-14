@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
 /* HEADER blblablblbl */
+
 .sidebar {
     
     margin: 0;
@@ -23,7 +25,7 @@
   .sidebar a {
     display: block;
     color: black;
-    padding: 5px;
+    padding: 7px;
     text-decoration: none;
     text-align: center;
   }
@@ -39,9 +41,38 @@
   }
 
 body{
-  background-image:url("../images/background.jpg")
+  background-image:url("../images/background.jpg");
+  background-size: 20%;
+  
     /* {% static 'images/background.jpg' %}
     url("../img/img/img-header@2x.png") */
+}
+
+footer{
+  padding-top: 100px;
+}
+
+p.footer{
+  font-size: 10px;
+  text-align: center;
+  padding: 0px 270px;
+}
+
+.title_summary, .who, .scope{
+  text-align: center;
+  padding-top:20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size:30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.summary, .w_who{
+  text-align: center;
+  /* padding-top:5px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Verdana, sans-serif;
 }
 
 .text_up{
@@ -49,9 +80,20 @@ body{
   color: white;
   padding: 10px 0px;
 }
+
+
+
+.slide{
+  text-align: center;
+}
+
+span.carousel-control-prev-icon{
+  background: black;
+}
 div.d-block{
   width:50px;
 }
+
   div.content {
     margin-left: 200px;
     padding: 30px 5px;
@@ -80,7 +122,7 @@ div.d-block{
     float: right;
 }
 .icon{
-    width: 20px;
+    width: 30px;
 }
 
 .icon_up{
@@ -97,8 +139,8 @@ span.home_contact{
   text-align: center;
 }
 
-.content{
-  padding-top: 1000px;
+.button{
+  text-align: center;
 }
 
 /* ISI */

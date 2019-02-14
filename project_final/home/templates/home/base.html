@@ -9,6 +9,10 @@
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     
@@ -32,21 +36,28 @@
                 <img class="icon" src="{% static 'images/home_instagram.png' %}" >
             </a>
             <div class="text_bottom">
-                <p> copyright 2019</p>
+                <h6> Profy Management </h6><br>
+
             </div>
         </div>
     </div>
     <div class="container">
         <div class="content">
-            <div style="float: right; height:500px; width: 800px; padding-bottom: 3px; background:#64b4f4; padding-top: 10px;">
+            <div style="float: right; height:50px; width: 800px; padding-bottom: 3px; background:#64b4f4; padding-top: 10px;">
                 <div class="text_up">
                     PROFESIONAL TECH TALENT MANAGEMENT
                 </div>
-                <div style="height: 850px; overflow: auto; background: white;" class="row">
+                <div style="height: 850px; overflow: auto; background: rgba(255, 255, 255, 0.95);" class="row">
                     <!-- MULAI -->
                     {% block content %}
-
+                    
                     {% endblock %}
+                    <footer>
+                        <div >
+                          <p class="footer">Profy Management | Since Yesterday | Alphatech Academy</p>
+                        </div>
+                      
+                  </footer>
                 </div>
                    
                            
