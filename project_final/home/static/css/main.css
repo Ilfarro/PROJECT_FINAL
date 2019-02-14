@@ -1,23 +1,35 @@
 /* HEADER blblablblbl */
 .sidebar {
+    
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.88);
     position: fixed;
     height: 100%;
     overflow: auto;
   }
-  
+
+.bottom_sidebar {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }  
+
   .sidebar a {
     display: block;
     color: black;
-    padding: 16px;
+    padding: 5px;
     text-decoration: none;
+    text-align: center;
   }
    
   .sidebar a.active {
-    background-color: #4CAF50;
+    background-color: #64b4f4;
     color: white;
   }
   
@@ -25,10 +37,24 @@
     background-color: #555;
     color: white;
   }
-  
+
+body{
+  background-image:url("../images/background.jpg")
+    /* {% static 'images/background.jpg' %}
+    url("../img/img/img-header@2x.png") */
+}
+
+.text_up{
+  text-align: center;
+  color: white;
+  padding: 10px 0px;
+}
+div.d-block{
+  width:50px;
+}
   div.content {
     margin-left: 200px;
-    padding: 1px 16px;
+    padding: 30px 5px;
     height: 1000px;
   }
   
@@ -49,58 +75,257 @@
     }
   }
 
+.background{
+    width:75%;
+    float: right;
+}
 .icon{
     width: 20px;
 }
+
+.icon_up{
+  width : 15px;
+}
+
+span.home_contact{
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.text_bottom{
+  text-align: center;
+}
+
+.content{
+  padding-top: 1000px;
+}
+
 /* ISI */
 /* HOME */
-.box-home {
-    margin: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-.home-logo {
-    padding: 55px 85px;
-    border: 1px solid rgba(170, 154, 154, 0.739);
-    width: 230px;
-    height: 180px;
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
-/* BLOG */
-.blog-row-1 {
-    padding: 0px 235px;
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 
-/* MENTOR */
-.mentor-nama {
-    color: rgb(105, 105, 105);
-    padding: 0;
-    margin: 0;
+/* Rotate */
+.hover06 figure img {
+	-webkit-transform: rotate(0deg) scale(1);
+	transform: rotate(0deg) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover06 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(15deg) scale(1);
 }
 
-.mentor-foto {
-    margin-bottom: 30px;
+/* TOMBOL PAGE */
+.tombol_page {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
 }
 
-/* MENTEE */
-.mentee-foto {
-    width: 70%;
+.tombol_page:hover {
+  background-color: rgb(39, 39, 39);
+  color: black;
 }
 
-/* AUTHOR */
-.author-row {
-    padding: 0px 200px;
+.previous {
+  background-color: rgb(172, 172, 172);
+  color: black;
 }
 
-.maps {
-    
+.next {
+  background-color: rgb(172, 172, 172);
+  color: white;
 }
 
-/* FOOTER */
-.footer-1 {
-    background-color: #00CAD1
-}
-
-.footer-2 {
-    background-color: black
+.round {
+  border-radius: 50%;
 }

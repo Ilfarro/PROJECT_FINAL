@@ -1,0 +1,36 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ISI -->
+    <div class="container">
+        {% for news_post in news_posts %}
+            <div class="col-12">
+                <br>
+                <img style="max-width: 300px; max-height: 300px" src="{{news_post.picture}}" alt="some_pict">
+            </div>
+            <div class="col-12">
+                <br>
+                <h2>{{news_post.title}}</h2>
+                <p>{{news_post.content|truncatewords:50}}</p>
+                <p class="text-primary"><a href="{% url 'news_detail' news_id=news_post.id %}">Selengkapnya</a></p>
+                <br>
+            </div>
+        {% endfor %}
+
+    <!-- HALAMAN -->
+        <div class="pagination justify-content-center">
+            <span class="step-links">
+                {% if news_posts.has_previous %}
+                    <a class="previous round tombol_page" href="?page={{ news_posts.previous_page_number }}">&#8249;</a>
+                {% endif %}
+                <span class="current">
+                    Page {{ news_posts.number }} of {{ news_posts.paginator.num_pages }}.
+                </span>
+                {% if news_posts.has_next %}
+                    <a class="previous round tombol_page" href="?page={{ news_posts.next_page_number }}" class="next round">&#8250;</a>
+                {% endif %}
+            </span>
+        </div>
+        <br>
+    </div>
+{% endblock %}
