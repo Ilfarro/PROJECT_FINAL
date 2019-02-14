@@ -1,0 +1,106 @@
+/* HEADER */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+.icon{
+    width: 20px;
+}
+/* ISI */
+/* HOME */
+.box-home {
+    margin: 30px;
+}
+
+.home-logo {
+    padding: 55px 85px;
+    border: 1px solid rgba(170, 154, 154, 0.739);
+    width: 230px;
+    height: 180px;
+}
+
+/* BLOG */
+.blog-row-1 {
+    padding: 0px 235px;
+}
+
+
+/* MENTOR */
+.mentor-nama {
+    color: rgb(105, 105, 105);
+    padding: 0;
+    margin: 0;
+}
+
+.mentor-foto {
+    margin-bottom: 30px;
+}
+
+/* MENTEE */
+.mentee-foto {
+    width: 70%;
+}
+
+/* AUTHOR */
+.author-row {
+    padding: 0px 200px;
+}
+
+.maps {
+    
+}
+
+/* FOOTER */
+.footer-1 {
+    background-color: #00CAD1
+}
+
+.footer-2 {
+    background-color: black
+}
