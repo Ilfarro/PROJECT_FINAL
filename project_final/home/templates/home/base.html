@@ -13,22 +13,48 @@
 <body>
     
     <!-- HEADER -->
-    <div class="sidebar">
-        <span> 08111 2222 3333</span>
-        <span> talent@gmail.com</span>
-        <img src="{% static 'images/home_logo.jpeg' %}">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <img class="icon" src="{% static 'images/home_fb.png' %}">
-        <img class="icon" src="{% static 'images/home_twitter.jpeg' %}">
-        <img class="icon" src="{% static 'images/home_instagram.png' %}">
+    <div class="container-fluid">
+        <div class="sidebar">
+            <img style="width:100%" src="{% static 'images/home_talent.png' %}">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+  
 
-      </div>
+            <a href="https://www.facebook.com/">
+                <img class="icon" src="{% static 'images/home_fb.png' %}">
+            </a>
+            <a href="https://www.twitter.com/">
+                <img class="icon" src="{% static 'images/home_twitter.png' %}" >
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="icon" src="{% static 'images/home_instagram.png' %}" >
+            </a>
+            <div class="text_bottom">
+                <p> copyright 2019</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div style="float: right; height:500px; width: 800px; padding-bottom: 3px; background:#64b4f4; padding-top: 10px;">
+                <div class="text_up">
+                    PROFESIONAL TECH TALENT MANAGEMENT
+                </div>
+                <div style="height: 850px; overflow: auto; background: white;" class="row">
+                    <!-- MULAI -->
+                    {% block content %}
 
-    {% block content %}
-    {% endblock %}
+                    {% endblock %}
+                </div>
+                   
+                           
+            </div>
+            </div>
+
+
+        </div>
     
 </body>
 </html>
