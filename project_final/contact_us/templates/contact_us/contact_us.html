@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ISI -->
+    <div class="container">
+        <div class="col-12 text-center">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="col-12">
+            <p>Jangan ragu untuk mendiskusikan budget dan kebutuhan anda dengan kami.<br>Silahkan kontak langsung dengan Key Person kami.</p>
+            <p>Mr. X<br>Marketing Manager<br>WhatsApp/Call: 14045<br>Email: mr.x@xxx.com</p>
+            <form method="POST" class="post-form">{% csrf_token %}
+                {{form.as_p}}
+                <button type='submit' class="save btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+{% endblock %}
