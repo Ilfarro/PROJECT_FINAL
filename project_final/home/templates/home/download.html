@@ -1,0 +1,18 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="news_content">
+        <div class="col-12 text-center mt-5">
+            <br>
+            <img style="max-width: 300px; max-height: 300px; border-radius: 50%; width:auto ;" src="{% static 'images/download-logo.png' %}" alt="some_pict">
+            <br>
+            <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif"><a download href="{% static 'LAPORAN PAIR PROJECT.pdf' %}">Download</a></h2>
+            <br>
+        </div>
+    </div>    
+    <br>
+</div>
+
+{% endblock %}

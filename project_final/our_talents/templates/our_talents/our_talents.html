@@ -1,0 +1,62 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ISI -->
+    <div class="container">
+        {% for talent in talents %}
+        <div style="margin-left: 50px">
+        <div class="col-12 mr-5 ml-5 mt-2 hover06 text-align:center;">
+            <br>
+            <figure><img id="myImg" style="width: 250px; height: 300px" src="{{talent.picture}}" alt="some_pict"></figure>
+            <span class="blinking"><strong>{{talent.title}}</strong></span>
+            <p>{{talent.description}}</p>
+        </div>
+     </div>
+        {% endfor %}
+        
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    
+    <!-- HALAMAN -->
+    <div class="pagination justify-content-center">
+        <span class="step-links">
+            {% if talents.has_previous %}
+                <a class="previous round tombol_page" href="?page={{ talents.previous_page_number }}">&#8249;</a>
+            {% endif %}
+            <span class="current">
+                Page {{ talents.number }} of {{ talents.paginator.num_pages }}
+            </span>
+            {% if talents.has_next %}
+                <a class="previous round tombol_page" href="?page={{ talents.next_page_number }}" class="next round">&#8250;</a>
+            {% endif %}
+        </span>
+    </div>
+    </div>
+
+    <!-- ZOOM -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        </script>
+{% endblock %}
