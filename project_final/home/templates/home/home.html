@@ -2,82 +2,103 @@
 {% load static %}
 {% block content %}
     <!-- ISI -->
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <img src="{% static 'images/benefit.png' %}" alt="benefit">
-            </div>
-            <div class="col-8">
-                <h3>Learn awesome tech</h3>
-                <p>You will learn about programming language, such as Python and Javascript, build back-end apps using Flask framework with microservice concept, build client-site apps using React Library, etc.</p>
-            </div>
-            <div class="col-4">
-                <img src="{% static 'images/search-job.png' %}" alt="search-job">
-            </div>
-            <div class="col-8">
-                <h3>Land new job</h3>
-                <p>If you can pass this awesome program, you will be part of our reliable tech team for especially Software Engineer position and other tech position such as Quality Engineer, System Analyst, etc.</p>
-            </div>
-            <div class="col-4">
-                <img src="{% static 'images/get-paid.png' %}" alt="get-paid">
-            </div>
-            <div class="col-8">
-                <h3>Get paid to learn</h3>
-                <p>Join for free and earn some money. Yes you read that right, no registration fee required to enter this program. To make things even better, you will receive pocket money just for participating. Cool, right?</p>
-            </div>
+    <div class="col-md-12">
+        <div id="slider">
+            <section>
+                <img src="{% static 'images/cover_6.jpg' %}">
+                <img src="{% static 'images/cover_5.png' %}">
+                <img src="{% static 'images/cover_4.jpg' %}">
+            </section>
         </div>
-        <br><br><br>
-        <div class="row">
-            <div class="col-4">
-                <img src="{% static 'images/mission.png' %}" alt="mission">
-            </div>        
-            <div class="col-8">
-                <h2><strong>Who are we?</strong></h2>
-                <p>Alpha Tech Academy is a tech talent incubation that gives anyone any chance (not even an IT background) to learn within 3 months of being a professional Tech Talent. What is our mission? We want to improve capability Tech Talent in Indonesia</p>
-                <br><br>
-                <h2><strong>What is our mission?</strong></h2>
-                <p>We want to improve capability Tech Talent in Indonesia</p>
-            </div>
+        <div class="who">
+            <p>Who are we?</p>
         </div>
-    </div>
-    <br><br><br><br><br><br><br> -->
-    <!-- WHAT WILL YOU LEARN? -->
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center">What will you learn?</h2>
-            </div>
+        <div class="w_who">
+            <p>We are professional management of tech talent. We provide talent that have experience in national project</p>
         </div>
-        <div class="row box-home text-center">
-            <div class="col-md-3">
-                <img class="home-logo" src="{% static 'images/learn-html.png' %}" alt="learn-html">
-            </div>
-            <div class="col-md-3">
-                <img class="home-logo" src="{% static 'images/learn-programming.png' %}" alt="learn-programming">
-            </div>
-            <div class="col-md-3">
-                <img style="padding: 55px 50px;" class="home-logo" src="{% static 'images/learn-git.png' %}" alt="learn-git">
-            </div>
-            <div class="col-md-3">
-                <img style="padding: 75px 50px;" class="home-logo" src="{% static 'images/learn-api.png' %}" alt="learn-api">
-            </div>
+        <hr/>
+        <div class="title_summary">
+            <p>We develop talent</p>
+        </div>      
+        <div class="summary">
+        <p>Talent management focuses on developing talent that is strategically important for an organization's future.
+            Research in talent management typically focuses on managerial or leadership talents, yet
+            there are other important career tracks within organization</h6>
+        </p>
         </div>
-        <div class="row box-home text-center">
-            <div class="col-md-3">
-                <img style="padding: 60px 40px;" class="home-logo" src="{% static 'images/learn-react.png' %}" alt="learn-react">
-            </div>
-            <div class="col-md-3">
-                <img style="padding: 65px 50px;" class="home-logo" src="{% static 'images/learn-tdd.png' %}" alt="learn-tdd">
-            </div>
-            <div class="col-md-3">
-                <img style="padding: 50px 50px;" class="home-logo" src="{% static 'images/learn-server.png' %}" alt="learn-server">
-            </div>
-            <div class="col-md-3">
-                <img style="padding: 50px 40px;" class="home-logo" src="{% static 'images/learn-scrum.png' %}" alt="learn-scrum">
-            </div>
+        <hr/>
+        <div class="who">
+            <p>Our Talent</p>
         </div>
-    </div>
-    <br><br> -->
+        <div class="slide">
 
+            <!-- mulai slide -->
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img style="border-radius: 30px" src="{% static 'images/sia.jpg' %}" alt="Los Angeles" width="30%" height="300px%">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="border-radius: 30px" src="{% static 'images/sib.jpeg' %}" alt="Chicago" width="40%" height="300px">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="border-radius: 30px" src="{% static 'images/sic.jpg' %}" alt="New York" width="auto" height="300px">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="border-radius: 30px" src="{% static 'images/sid.jpeg' %}" alt="New York" width="auto" height="300px">
+                        </div>
+                        <!-- <div class="hovereffect">
+                                <img class="img-responsive" src="{% static 'images/sid.jpeg' %}" alt="">
+                                    <div class="overlay">
+                                        <h2>Effect 13</h2>
+                                       
+                                    </div>
+                            </div> -->
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev" style="padding-left:500px">
+                    <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <br>
+            </div>
+        </div> 
+        <hr/>
+        <div class="scope">
+            <p>Scope of Talent</p>
+        </div>   
+        <div class="button">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo_1">SEO Consultant</button>
+            <div id="demo_1" class="collapse">
+                As an SEO Consultant, you’re there to make sure that great content doesn’t get lost in the heap.
+            </div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo_2">Digital Marketing</button>
+            <div id="demo_2" class="collapse">
+                A digital marketer’s role is to understand customers and the stories they tell and believe about themselves. Instead of magazine ads and radio commercials, digital marketing managers advertise on new media platforms like social networks, email, and blogs, and they measure their success with hard data.
+            </div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo_3">Growth Hacker</button>
+            <div id="demo_3" class="collapse">
+                Growth hackers, so hot right now. If Digital Marketing Managers are all about growing brands and business with powerful stories and user engagement, growth hackers take a closer look at the numbers.
+            </div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo_4">Information Architect</button>
+            <div id="demo_4" class="collapse">
+                Information architect’s main jobs are to create site maps and user flows, define data flows/delivery, and research concept and usability testing.
+            </div>
+        </div>
+    </div>
 {% endblock %}
     
