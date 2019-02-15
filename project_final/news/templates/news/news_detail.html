@@ -6,11 +6,11 @@
         <div class="col-12 ml-5">
             <img class="float-right mb-3" style="width: 850px; max-height: 800px" src="{{news.picture}}" alt="some_pict">
         </div>
-        <div class="col-12 text-justify">
+        <div class="col-12">
             <h2>{{news.title}}</h2>
             <br>
-            <p style="text-indent: 50px;">{{news.content}}</p>
-            <p class="text-primary"><a href="{% url 'news' %}">kembali</a></p>
+            <p style="text-indent: 50px;  text-align: justify; white-space: pre-line;">{{news.content}}</p>
+            <p class="text-primary"><a href="{% url 'news' %}">Previous Page</a></p>
         </div>
     </div>
 {% endblock %}

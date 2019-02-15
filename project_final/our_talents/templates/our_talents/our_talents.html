@@ -4,15 +4,16 @@
     <!-- ISI -->
     <div class="container">
         {% for talent in talents %}
-    </div>
-    <div class="row">
-        <div class="col-md-1 mr-5 ml-5 mt-2 hover06">
+        <div style="margin-left: 50px">
+        <div class="col-12 mr-5 ml-5 mt-2 hover06 text-align:center;">
             <br>
-            <figure><img id="myImg" style="max-width: 300px; max-height: 300px" src="{{talent.picture}}" alt="some_pict"></figure>
-            <p>{{talent.title}}</p>
+            <figure><img id="myImg" style="width: 250px; height: 300px" src="{{talent.picture}}" alt="some_pict"></figure>
+            <span class="blinking"><strong>{{talent.title}}</strong></span>
+            <p>{{talent.description}}</p>
         </div>
+     </div>
         {% endfor %}
-    </div>
+        
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
@@ -20,23 +21,22 @@
     </div>
     
     <!-- HALAMAN -->
-        <div class="pagination">
-            <span class="step-links">
-                {% if talents.has_previous %}
-                    <a href="?page=1"></a>
-                    <a href="?page={{ talents.previous_page_number }}">previous</a>
-                {% endif %}
-
-                <span class="current">
-                    Page {{ talents.number }} of {{ talents.paginator.num_pages }}.
-                </span>
-
-                {% if talents.has_next %}
-                    <a href="?page={{ talents.next_page_number }}">next</a>
-                    <a href="?page={{ talents.paginator.num_pages }}">last</a>
-                {% endif %}
+    <div class="pagination justify-content-center">
+        <span class="step-links">
+            {% if talents.has_previous %}
+                <a class="previous round tombol_page" href="?page={{ talents.previous_page_number }}">&#8249;</a>
+            {% endif %}
+            <span class="current">
+                Page {{ talents.number }} of {{ talents.paginator.num_pages }}
             </span>
-        </div>
+            {% if talents.has_next %}
+                <a class="previous round tombol_page" href="?page={{ talents.next_page_number }}" class="next round">&#8250;</a>
+            {% endif %}
+        </span>
+    </div>
+    </div>
+
+    <!-- ZOOM -->
         <script>
             // Get the modal
             var modal = document.getElementById('myModal');
